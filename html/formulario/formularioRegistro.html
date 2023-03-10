@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link rel="shortcut icon" href="img/logotipo/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../style/estiloRegistro.css">
+  <link rel="stylesheet" href="../../style/styleGeneral.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+
+<body class="text-center">
+  <main class="form-signin principal bg-transparent">
+    <figure>
+      <a href="../../index.html" rel="noopener noreferrer">
+        <img class="mb-2" src="../../img/logotipo/android-chrome-512x512.png" alt="Logo_BuscaHabit" width="250"
+          height="230">
+      </a>
+    </figure>
+    <article class="row g-3 fomulario">
+      <section class="col-md-6">
+        <label for="nombreRegistro" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombreRegistro" placeholder="Pepito">
+      </section>
+      <section class="col-md-6">
+        <label for="apellidosRegistro" class="form-label">Apellidos</label>
+        <input type="text" class="form-control" id="apellidosRegistro" placeholder="Grillo">
+      </section>
+      <section class="col-12">
+        <label for="correoRegistro" class="form-label">Correo</label>
+        <input type="email" class="form-control" id="correoRegistro" placeholder="ejemplo@usuario.com">
+      </section>
+      <section class="col-12">
+        <label for="direccionCalleRegistro" class="form-label">Dirección</label>
+        <input type="text" class="form-control" id="direccionCalleRegistro" placeholder="Calle Alta nº4">
+      </section>
+      <section class="col-md-6">
+        <label for="ciudadRegistro" class="form-label">Ciudad</label>
+        <input type="text" class="form-control" id="ciudadRegistro" placeholder="Écija">
+      </section>
+      <section class="col-md-4">
+        <label for="comunidadRegistro" class="form-label">Comunidad</label>
+        <select id="comunidadRegistro" class="form-select">
+          <option selected>Selecione una</option>
+          <option>Sevilla</option>
+          <option>Cordoba</option>
+          <option>Barcelona</option>
+          <option>Madrid</option>
+          <option>...</option>
+        </select>
+      </section>
+      <section class="col-md-2">
+        <label for="codigoPostalRegistro" class="form-label">CP</label>
+        <input type="text" class="form-control" id="codigoPostalRegistro" placeholder="Codigo Postal">
+      </section>
+      <a href="../panelUsuario/panelUsuario.html">
+        <button type="submit" class="btn btn-primary">Registrarse</button>
+      </a>
+    </article>
+    <p class="mt-5 mb-3">&copy; Roman Solanas Barrera</p>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

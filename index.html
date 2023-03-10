@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuscaHabit</title>
+    <link rel="shortcut icon" href="img/logotipo/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style/estiloInicio.css">
+    <link rel="stylesheet" href="style/styleGeneral.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+
+<body class="cuerpo">
+
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 ">
+        <a href="index.html" class="col-md-3 text-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img class="bi me-2 logotipo" src="img/logotipo/android-chrome-192x192.png">
+        </a>
+
+        <ul class="nav col-6 col-md-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="html/buscador/buscador.html" class="nav-link px-2 link-dark">Buscador</a></li>
+            <li><a href="#quienesSomos" class="nav-link px-2 link-dark">Quienes Somos</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">Ayuda</a></li>
+        </ul>
+
+        <section class="col-md-3 text-center text-decoration-none">
+            <a href="html/formulario/formularioRegistro.html" rel="noopener noreferrer">
+                <button type="button" class="btn btn-success me-1">Registrarse</button>
+            </a>
+            <a href="html/formulario/formularioInicioSesion.html" rel="noopener noreferrer">
+                <button type="button" class="btn btn-success">Iniciar Sesión</button>
+            </a>
+        </section>
+    </header>
+    <main>
+        <article id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <section class="carousel-inner">
+                <section class="carousel-item active carrusel_item">
+                    <div class="card border-light">
+                        <div class="card-img bg-transparent">
+                            <img src="img/Habitaciones/Habitacion1.jpg" class="d-block w-100 img_carrusel" alt="...">
+                        </div>
+                        <div class="card-body"></div>
+                    </div>
+                    
+                </section>
+                <section class="carousel-item carrusel_item">
+                    <div class="card border-light">
+                        <div class="card-img bg-transparent">
+                            <img width="70%" height="70%" src="img/Habitaciones/Habitacion2.jpg" class="d-block w-100 img_carrusel"  alt="...">
+                        </div>
+                        <div class="card-body"></div>
+                    </div>
+                    
+                </section>
+                <section class="carousel-item carrusel_item">
+                    <div class="card border-light">
+                        <div class="card-img bg-transparent">
+                            <img width="70%" height="70%" src="img/Habitaciones/Habitacion3.jpg" class="d-block w-100 img_carrusel" alt="...">
+                        </div>
+                        <div class="card-body"></div>
+                    </div>
+                </section>
+            </section>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </article>
+        <section class="container-fluid" id="quienesSomos">
+            <article class="justify-content-center align-content-center ">
+                <h1 class="text-center">Quienes Somos?</h1>
+                <div class="card mb-3 border-light">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="img/logotipo/Logo_BuscaHabit.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8 align-self-center align-content-center">
+                        <div class="card-body d">
+                          <h3 class="card-text">Somos un grupo de emprededores jovenes con ganas de comernos el mundo.</h3>
+                          <h4 class="card-text">Con la Idea de mostrar habitaciones accesibles en grandes ciudades para Estudiantes.</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul class="nav justify-content-end piePagina">
+                <li class="nav-item">
+                    <a class="nav-link px-2 link-dark" href="#">Politicas de Privacidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2 link-dark" href="#">Preguntas Frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2 link-dark" href="#">Coockies</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

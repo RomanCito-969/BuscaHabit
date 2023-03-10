@@ -1,0 +1,27 @@
+.logo {
+  margin-left: 10%;
+}
+.logotipo {
+  width: 100;
+  height: 70px;
+}
+.botonesInicio a {
+  text-decoration: none;
+}
+
+.piePagina {
+  color: black;
+}
+
+.textoCentro {
+  text-align: center;
+}
+.img_carrusel {
+  width: 100%;
+  height: 1000px;
+  aspect-ratio: 2/2;
+  object-fit: contain;
+}
+.carrusel_item {
+  background-color: #5f7459;
+}

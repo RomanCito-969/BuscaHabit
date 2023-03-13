@@ -1,478 +1,928 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BuscaHabit</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/logotipo/favicon.ico" type="image/x-icon">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style/Inicio.css" />
+    <link
+      rel="shortcut icon"
+      href="img/logotipo/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="w-100">
-        <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#Inicio">
-                    <img class="bi me-2" src="img/logotipo/favicon-32x32.png">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
-                    aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarMenu">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#Buscador">Buscador</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#QuienesSomos">Quienes Somos?</a>
-                        </li>
-                    </ul>
-                    <a class="navbar-brand" href="#">
-                        <button id="RegistroUsuario" class="btn btn-dark" role="button" data-bs-toggle="modal"
-                            data-bs-target="#ModalRegistro">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-person-circle" viewBox="0 0 16 16">
-                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                                <path fill-rule="evenodd"
-                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                            </svg>
-                        </button>
-                    </a>
-                    <a class="navbar-brand" href="#">
-                        <button id="RegistroUsuario" class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
-                            aria-controls="offcanvasRight" data-bs-target="#MenuLateral">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z" />
-                            </svg>
-                        </button>
-                        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="MenuLateral"
-                            aria-labelledby="MenuLateralLabel">
-                            <div class="offcanvas-header">
-                                <h5 id="MenuLateralLabel">Ajustes</h5>
-                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body">
-
-                            </div>
-                        </div>
-                    </a>
+      <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#Inicio">
+            <img class="bi me-2" src="img/logotipo/favicon-32x32.png" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#Buscador"
+                  >Buscador</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#QuienesSomos">Quienes Somos?</a>
+              </li>
+            </ul>
+            <a class="navbar-brand" href="#">
+              <button
+                id="RegistroUsuario"
+                class="btn btn-dark"
+                role="button"
+                data-bs-toggle="modal"
+                data-bs-target="#ModalRegistro"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-person-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                  />
+                </svg>
+              </button>
+            </a>
+            <a class="navbar-brand" href="#">
+              <button
+                id="MenuLateralUsuario"
+                class="btn btn-dark"
+                type="button"
+                data-bs-toggle="offcanvas"
+                aria-controls="offcanvasRight"
+                data-bs-target="#MenuLateral"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-bar-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z"
+                  />
+                </svg>
+              </button>
+              <div
+                class="offcanvas offcanvas-end bg-dark"
+                tabindex="-1"
+                id="MenuLateral"
+                aria-labelledby="MenuLateralLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 id="MenuLateralLabel">Ajustes</h5>
+                  <button
+                    type="button"
+                    class="btn-close text-reset"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
                 </div>
-
-            </div>
-        </nav>
+                <div class="offcanvas-body">
+                  <button
+                    id="RegistroNuevoUsuario"
+                    class="btn btn-dark"
+                    role="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#ModalNuevoUsuario"
+                  >
+                    Registro Usuario
+                  </button>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
     </header>
     <main class="w-100">
-        <section id="modal" class="container-fluid">
-            <div class="modal fade" id="ModalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div id="Alerta">
-
-                    </div>
-                    <div class="modal-content">
-                        <div class="modal-header justify-content-center">
-                            <img class="modal-title" id="exampleModalLabel"
-                                src="img/logotipo/android-chrome-192x192.png" />
-                        </div>
-                        <div class="modal-body">
-                            <form id="formularioRegistro">
-                                <div class="mb-3">
-                                    <label for="Usuario" class="col-form-label">Usuario:</label>
-                                    <input type="text" class="form-control" id="Usuario" placeholder="Usuario/Correo">
-                                </div>
-                                <div class="mb-3">
-                                    <label for="passwordUsuario" class="col-form-label">Contraseña:</label>
-                                    <input type="password" class="form-control" id="passwordUsuario" />
-                                </div>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                    <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="submit" class="btn btn-dark">Entrar</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="Inicio" class="container-fluid mt-5">
-            <div class="container-fluid d-flex justify-content-center">
-                <img class="bg-transparent" src="img/logotipo/android-chrome-512x512.png" alt="Imagen Logotipo">
-            </div>
-            <article class="align-self-center">
-                <h1 class="text-dark text-center">BuscaHabit</h1>
-                <p class="text-dark text-center">Encuentra la Habitacion de tus sueños</p>
-            </article>
-        </section>
-        <section id="ExitosZona" class="container-fluid row ">
-            <div class="col-12">
-                <h1 class="text-center text-light m-3">Exitos de Tu Zona</h1>
-            </div>
-            <div id="carouselExitosZona" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row row-cols-1 row-cols-md-3 col-12">
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src="img/Habitaciones/Habitacion2.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, magni eius,
-                                            tempore tempora minima id corporis temporibus excepturi nihil quidem error
-                                            deleniti incidunt dignissimos, similique quia velit vero cupiditate!
-                                            Dignissimos!
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src="img/Habitaciones/Habitacion3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus soluta
-                                            perspiciatis eius maxime quam? Doloribus numquam ut ea non sunt magnam
-                                            suscipit libero amet rem, nesciunt architecto ducimus hic error!
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src="img/Habitaciones/Habitacion1.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis
-                                            obcaecati hic ex enim temporibus quis sequi voluptate itaque placeat esse,
-                                            ducimus iusto illo, dolores alias? Veritatis quas velit enim?
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row row-cols-1 row-cols-md-3 col-12">
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src="img/Habitaciones/Habitacion2.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis
-                                            obcaecati hic ex enim temporibus quis sequi voluptate itaque placeat esse,
-                                            ducimus iusto illo, dolores alias? Veritatis quas velit enim?
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src="img/Habitaciones/Habitacion3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis
-                                            obcaecati hic ex enim temporibus quis sequi voluptate itaque placeat esse,
-                                            ducimus iusto illo, dolores alias? Veritatis quas velit enim?
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src="img/Habitaciones/Habitacion1.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis
-                                            obcaecati hic ex enim temporibus quis sequi voluptate itaque placeat esse,
-                                            ducimus iusto illo, dolores alias? Veritatis quas velit enim?
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row row-cols-1 row-cols-md-3 col-12">
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src="img/Habitaciones/Habitacion2.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis
-                                            obcaecati hic ex enim temporibus quis sequi voluptate itaque placeat esse,
-                                            ducimus iusto illo, dolores alias? Veritatis quas velit enim?
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src="img/Habitaciones/Habitacion3.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis
-                                            obcaecati hic ex enim temporibus quis sequi voluptate itaque placeat esse,
-                                            ducimus iusto illo, dolores alias? Veritatis quas velit enim?
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card h-100">
-                                    <img src="img/Habitaciones/Habitacion1.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis
-                                            obcaecati hic ex enim temporibus quis sequi voluptate itaque placeat esse,
-                                            ducimus iusto illo, dolores alias? Veritatis quas velit enim?
-                                        </p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExitosZona"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+      <section id="modal" class="container-fluid">
+        <div
+          class="modal fade"
+          id="ModalRegistro"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div id="Alerta"></div>
+            <div class="modal-content">
+              <div class="modal-header justify-content-center">
+                <img
+                  class="modal-title"
+                  id="exampleModalLabel"
+                  src="img/logotipo/android-chrome-192x192.png"
+                />
+              </div>
+              <div class="modal-body">
+                <form id="formularioRegistro">
+                  <div class="mb-3">
+                    <label for="Usuario" class="col-form-label">Usuario:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="Usuario"
+                      placeholder="Usuario/Correo"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="passwordUsuario" class="col-form-label"
+                      >Contraseña:</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="passwordUsuario"
+                    />
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cerrar
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExitosZona"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
+                    <button type="submit" class="btn btn-dark">Entrar</button>
+                  </div>
+                </form>
+              </div>
             </div>
-        </section>
-        <section id="Buscador" class="container-fluid mt-5 pt-2">
-            <h1 class="text-center text-light m-3">Buscador</h1>
-            <section class="row m-3" id="mainBuscador">
-                <article id="listaBuscador" class="col-md-4">
-                    <div class="list-group">
-                        <a class="btn btn-secondary list-group-item" data-bs-toggle="collapse"
-                            href="#Habitacion1Example" role="button" aria-expanded="false"
-                            aria-controls="Habitacion1Example">
-                            Calle Alta Nº 23
-                        </a>
-                        <div class="collapse" id="Habitacion1Example">
-
-                            <div class="card mb-3" style="max-width: 540px;">
-                                <div class="row g-0">
-                                    <div class="col-md-4">
-                                        <img src="img/Habitaciones/Habitacion2.jpg" class="img-fluid rounded-start"
-                                            alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Calle Alta Nº 23</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a
-                                                natural lead-in to additional content. This content is a little bit
-                                                longer.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
-                                                    ago</small></p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <div class="card-footer text-center">
-                                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
-                                        data-bs-target="#habitacionModal">
-                                        Mas Info.
-                                    </button>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="modal fade" id="habitacionModal" tabindex="-1"
-                            aria-labelledby="habitacionModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="habitacionModalLabel">Calle Alta Nº23</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <img src="img/Habitaciones/Habitacion2.jpg" class="img-fluid rounded-start"
-                                            alt="...">
-                                        <h5 class="card-title">Calle Alta Nº 23</h5>
-                                        <p class="card-text">
-                                            This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit
-                                            longer.
-                                        </p>
-                                        <p class="card-text">
-                                            <small class="text-muted">Last updated 3 minsago</small>
-                                        </p>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Cerrar</button>
-                                        <button type="button" class="btn btn-primary">Contactar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn btn-secondary list-group-item" data-bs-toggle="collapse"
-                            href="#Habitacion2Example" role="button" aria-expanded="false"
-                            aria-controls="Habitacion2Example">
-                            Calle Alta Nº 24
-                        </a>
-                        <div class="collapse" id="Habitacion2Example">
-                            <div class="card mb-3" style="max-width: 540px;">
-                                <div class="row g-0">
-                                    <div class="col-md-4">
-                                        <img src="img/Habitaciones/Habitacion1.jpg" class="img-fluid rounded-start"
-                                            alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Calle Alta Nº 24</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a
-                                                natural lead-in to additional content. This content is a little bit
-                                                longer.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
-                                                    ago</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn btn-secondary list-group-item" data-bs-toggle="collapse"
-                            href="#Habitacion3Example" role="button" aria-expanded="false"
-                            aria-controls="Habitacion3Example">
-                            Calle Alta Nº 25
-                        </a>
-                        <div class="collapse" id="Habitacion3Example">
-                            <div class="card mb-3" style="max-width: 540px;">
-                                <div class="row g-0">
-                                    <div class="col-md-4">
-                                        <img src="img/Habitaciones/Habitacion3.jpg" class="img-fluid rounded-start"
-                                            alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Calle Alta Nº 25</h5>
-                                            <p class="card-text">This is a wider card with supporting text below as a
-                                                natural lead-in to additional content. This content is a little bit
-                                                longer.</p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
-                                                    ago</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="btn btn-secondary list-group-item" data-bs-toggle="collapse"
-                            href="#Habitacion4Example" role="button" aria-expanded="false"
-                            aria-controls="Habitacion4Example">
-                            Calle Alta Nº 26
-                        </a>
-                        <div class="collapse" id="Habitacion4Example">
-                            <div class="card mb-3" style="max-width: 540px;">
-                                <div class="row g-0">
-                                    <div class="col-md-4">
-                                        <img src="img/Habitaciones/Habitacion2.jpg" class="img-fluid rounded-start"
-                                            alt="...">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Calle Alta Nº 26</h5>
-                                            <p class="card-text">
-                                                This is a wider card with supporting text below as a
-                                                natural lead-in to additional content. This content is a little bit
-                                                longer.
-                                            </p>
-                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
-                                                    ago</small></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+          </div>
+        </div>
+      </section>
+      <section id="modal2" class="container-fluid">
+        <div
+          class="modal fade"
+          id="ModalNuevoUsuario"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div id="Alerta2"></div>
+            <div class="modal-content">
+              <div class="modal-header justify-content-center">
+                <img
+                  class="modal-title"
+                  id="exampleModalLabel2"
+                  src="img/logotipo/android-chrome-192x192.png"
+                />
+              </div>
+              <div class="modal-body">
+                <form id="formularioRegistro">
+                  <div class="mb-3">
+                    <label for="NuevoUsuarioNombre" class="col-form-label"
+                      >Nombre:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="NuevoUsuarioNombre"
+                      placeholder="Jose Morjon"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="NuevoUsuarioApellidos" class="col-form-label"
+                      >Apellidos:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="NuevoUsuarioApellidos"
+                      placeholder="Martin Martin"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="NuevoUsuarioCorreo" class="col-form-label"
+                      >Correo:</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="NuevoUsuarioCorreo"
+                      placeholder="Abel.Morjon@gmail.com"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="passwordNuevoUsuario" class="col-form-label"
+                      >Contraseña:</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="passwordNuevoUsuario"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="passwordRepeatUsuario" class="col-form-label"
+                      >Repita Contraseña:</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="passwordRepeatUsuario"
+                    />
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Cerrar
+                    </button>
+                    <button type="submit" class="btn btn-dark">Iniciar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Inicio" class="container-fluid mt-5">
+        <div class="container-fluid d-flex justify-content-center">
+          <img
+            class="bg-transparent"
+            src="img/logotipo/android-chrome-512x512.png"
+            alt="Imagen Logotipo"
+          />
+        </div>
+        <article class="align-self-center">
+          <h1 class="text-dark text-center">BuscaHabit</h1>
+          <p class="text-dark text-center">
+            Encuentra la Habitacion de tus sueños
+          </p>
+        </article>
+      </section>
+      <section id="ExitosZona" class="container-fluid row">
+        <div class="col-12">
+          <h1 class="text-center text-light m-3">Exitos de Tu Zona</h1>
+        </div>
+        <div
+          id="carouselExitosZona"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row row-cols-1 row-cols-md-3 col-12">
+                <div class="col">
+                  <div class="card h-100">
+                    <img
+                      src="img/Habitaciones/Habitacion2.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ad, magni eius, tempore tempora minima id corporis
+                        temporibus excepturi nihil quidem error deleniti
+                        incidunt dignissimos, similique quia velit vero
+                        cupiditate! Dignissimos!
+                      </p>
                     </div>
-                </article>
-                <article id="mapaBuscador" class="col-md-8">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1581.7157503942879!2d-5.088635305959524!3d37.544896367167205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd12ca923afbce55%3A0xab17b91bb41fcbdf!2sBar%2020PK!5e0!3m2!1ses!2ses!4v1678657518420!5m2!1ses!2ses"
-                        class="w-100 h-100" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </article>
-            </section>
-        </section>
-        <section id="QuienesSomos">
-            <article class="justify-content-center align-content-center ">
-                <h1 class="text-center">Quienes Somos?</h1>
-                <div class="card mb-3 border-light">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="img/logotipo/Logo_BuscaHabit.png" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8 align-self-center align-content-center">
-                            <div class="card-body d">
-                                <h3 class="card-text">Somos un grupo de emprededores jovenes con ganas de comernos el
-                                    mundo.</h3>
-                                <h4 class="card-text">Con la Idea de mostrar habitaciones accesibles en grandes ciudades
-                                    para Estudiantes.</h4>
-                            </div>
-                        </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
                     </div>
+                  </div>
                 </div>
-            </article>
+                <div class="col">
+                  <div class="card h-100">
+                    <img
+                      src="img/Habitaciones/Habitacion3.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatibus soluta perspiciatis eius maxime quam?
+                        Doloribus numquam ut ea non sunt magnam suscipit libero
+                        amet rem, nesciunt architecto ducimus hic error!
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img
+                      src="img/Habitaciones/Habitacion1.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquid facilis obcaecati hic ex enim temporibus quis
+                        sequi voluptate itaque placeat esse, ducimus iusto illo,
+                        dolores alias? Veritatis quas velit enim?
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row row-cols-1 row-cols-md-3 col-12">
+                <div class="col">
+                  <div class="card h-100">
+                    <img
+                      src="img/Habitaciones/Habitacion2.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquid facilis obcaecati hic ex enim temporibus quis
+                        sequi voluptate itaque placeat esse, ducimus iusto illo,
+                        dolores alias? Veritatis quas velit enim?
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img
+                      src="img/Habitaciones/Habitacion3.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquid facilis obcaecati hic ex enim temporibus quis
+                        sequi voluptate itaque placeat esse, ducimus iusto illo,
+                        dolores alias? Veritatis quas velit enim?
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img
+                      src="img/Habitaciones/Habitacion1.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquid facilis obcaecati hic ex enim temporibus quis
+                        sequi voluptate itaque placeat esse, ducimus iusto illo,
+                        dolores alias? Veritatis quas velit enim?
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row row-cols-1 row-cols-md-3 col-12">
+                <div class="col">
+                  <div class="card h-100">
+                    <img
+                      src="img/Habitaciones/Habitacion2.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquid facilis obcaecati hic ex enim temporibus quis
+                        sequi voluptate itaque placeat esse, ducimus iusto illo,
+                        dolores alias? Veritatis quas velit enim?
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img
+                      src="img/Habitaciones/Habitacion3.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquid facilis obcaecati hic ex enim temporibus quis
+                        sequi voluptate itaque placeat esse, ducimus iusto illo,
+                        dolores alias? Veritatis quas velit enim?
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img
+                      src="img/Habitaciones/Habitacion1.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquid facilis obcaecati hic ex enim temporibus quis
+                        sequi voluptate itaque placeat esse, ducimus iusto illo,
+                        dolores alias? Veritatis quas velit enim?
+                      </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Last updated 3 mins ago</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExitosZona"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExitosZona"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="Buscador" class="container-fluid mt-5 pt-2">
+        <h1 class="text-center text-light m-3">Buscador</h1>
+        <section class="row m-3" id="mainBuscador">
+          <article id="listaBuscador" class="col-md-4">
+            <div class="list-group">
+              <a
+                class="btn btn-secondary list-group-item"
+                data-bs-toggle="collapse"
+                href="#Habitacion1Example"
+                role="button"
+                aria-expanded="false"
+                aria-controls="Habitacion1Example"
+              >
+                Calle Alta Nº 23
+              </a>
+              <div class="collapse" id="Habitacion1Example">
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="img/Habitaciones/Habitacion2.jpg"
+                        class="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Calle Alta Nº 23</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted"
+                            >Last updated 3 mins ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-footer text-center">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#habitacionModal"
+                    >
+                      Mas Info.
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="modal fade"
+                id="habitacionModal"
+                tabindex="-1"
+                aria-labelledby="habitacionModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="habitacionModalLabel">
+                        Calle Alta Nº23
+                      </h5>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="img/Habitaciones/Habitacion2.jpg"
+                        class="img-fluid rounded-start"
+                        alt="..."
+                      />
+                      <h5 class="card-title">Calle Alta Nº 23</h5>
+                      <p class="card-text">
+                        This is a wider card with supporting text below as a
+                        natural lead-in to additional content. This content is a
+                        little bit longer.
+                      </p>
+                      <p class="card-text">
+                        <small class="text-muted">Last updated 3 minsago</small>
+                      </p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Cerrar
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Contactar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="btn btn-secondary list-group-item"
+                data-bs-toggle="collapse"
+                href="#Habitacion2Example"
+                role="button"
+                aria-expanded="false"
+                aria-controls="Habitacion2Example"
+              >
+                Calle Alta Nº 24
+              </a>
+              <div class="collapse" id="Habitacion2Example">
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="img/Habitaciones/Habitacion1.jpg"
+                        class="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Calle Alta Nº 24</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted"
+                            >Last updated 3 mins ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="btn btn-secondary list-group-item"
+                data-bs-toggle="collapse"
+                href="#Habitacion3Example"
+                role="button"
+                aria-expanded="false"
+                aria-controls="Habitacion3Example"
+              >
+                Calle Alta Nº 25
+              </a>
+              <div class="collapse" id="Habitacion3Example">
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="img/Habitaciones/Habitacion3.jpg"
+                        class="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Calle Alta Nº 25</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted"
+                            >Last updated 3 mins ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="btn btn-secondary list-group-item"
+                data-bs-toggle="collapse"
+                href="#Habitacion4Example"
+                role="button"
+                aria-expanded="false"
+                aria-controls="Habitacion4Example"
+              >
+                Calle Alta Nº 26
+              </a>
+              <div class="collapse" id="Habitacion4Example">
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="img/Habitaciones/Habitacion2.jpg"
+                        class="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">Calle Alta Nº 26</h5>
+                        <p class="card-text">
+                          This is a wider card with supporting text below as a
+                          natural lead-in to additional content. This content is
+                          a little bit longer.
+                        </p>
+                        <p class="card-text">
+                          <small class="text-muted"
+                            >Last updated 3 mins ago</small
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article id="mapaBuscador" class="col-md-8">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1581.7157503942879!2d-5.088635305959524!3d37.544896367167205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd12ca923afbce55%3A0xab17b91bb41fcbdf!2sBar%2020PK!5e0!3m2!1ses!2ses!4v1678657518420!5m2!1ses!2ses"
+              class="w-100 h-100"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </article>
         </section>
+      </section>
+      <section id="QuienesSomos">
+        <article class="justify-content-center align-content-center">
+          <h1 class="text-center">Quienes Somos?</h1>
+          <div class="card mb-3 border-light">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="img/logotipo/Logo_BuscaHabit.png"
+                  class="img-fluid rounded-start"
+                  alt="..."
+                />
+              </div>
+              <div class="col-md-8 align-self-center align-content-center">
+                <div class="card-body d">
+                  <h3 class="card-text">
+                    Somos un grupo de emprededores jovenes con ganas de comernos
+                    el mundo.
+                  </h3>
+                  <h4 class="card-text">
+                    Con la Idea de mostrar habitaciones accesibles en grandes
+                    ciudades para Estudiantes.
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
     </main>
-    <footer>
-        <section class="">
+    <footer class="text-center text-lg-start bg-dark text-muted">
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <div class="me-5 d-none d-lg-block">
+          <span>Contactenos en nuestras redes sociales:</span>
+        </div>
+        <div>
+          <a href="" class="me-4 text-reset">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-facebook"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+              />
+            </svg>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-twitter"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+              />
+            </svg>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
+              />
+            </svg>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-linkedin"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+              />
+            </svg>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-github"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>BuscaHabit
+              </h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                neque, iste totam inventore ipsum minus? Nihil, magnam
+                recusandae amet ea, sunt vitae obcaecati quibusdam a quo quae
+                reprehenderit, eius molestias!
+              </p>
+            </div>
 
-        </section>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Enlace Utiles</h6>
+
+              <p>
+                <a href="#!" class="text-reset">Ajustes</a>
+              </p>
+
+              <p>
+                <a href="#!" class="text-reset">Ayuda</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+              <p><i class="fas fa-home me-3"></i> Ecija, Sevilla 41400, US</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@BuscaHabit.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2023 Copyright:
+        <a
+          class="text-reset fw-bold"
+          href="https://www.github.com/RomanCito-969"
+          >BuscaHabit</a
+        >
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-</body>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,5 +1,6 @@
 body {
   background-image: linear-gradient(#174411, #222222);
+  font-family: "Arigato", sans-serif;
 }
 @media (min-width: 600px) {
   #Inicio {

@@ -15,7 +15,7 @@ body {
 #Inicio {
   margin-top: 2em;
 
-  background-image: url(/img/Habitaciones/Habitacion1.jpg);
+  background-image: url(../img/Habitaciones/Habitacion1.jpg);
   background-position: center center;
   background-size: cover;
 }

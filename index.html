@@ -6,111 +6,473 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BuscaHabit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/logotipo/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style/estiloInicio.css">
-    <link rel="stylesheet" href="style/styleGeneral.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 
-<body class="cuerpo">
+<body>
+    <header class="w-100">
+        <nav class="navbar fixed-top navbar-expand-xl navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#Inicio">
+                    <img class="bi me-2" src="img/logotipo/favicon-32x32.png">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#Buscador">Buscador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#QuienesSomos">Quienes Somos?</a>
+                        </li>
+                    </ul>
+                    <a class="navbar-brand" href="#">
+                        <button id="RegistroUsuario" class="btn btn-dark" role="button" data-bs-toggle="modal"
+                            data-bs-target="#ModalRegistro">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                            </svg>
+                        </button>
+                    </a>
+                    <a class="navbar-brand" href="#">
+                        <button id="RegistroUsuario" class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                            aria-controls="offcanvasRight" data-bs-target="#MenuLateral">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5ZM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5Z" />
+                            </svg>
+                        </button>
+                        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="MenuLateral"
+                            aria-labelledby="MenuLateralLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="MenuLateralLabel">Ajustes</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
 
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 ">
-        <a href="index.html" class="col-md-3 text-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-            <img class="bi me-2 logotipo" src="img/logotipo/android-chrome-192x192.png">
-        </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
 
-        <ul class="nav col-6 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="html/buscador/buscador.html" class="nav-link px-2 link-dark">Buscador</a></li>
-            <li><a href="#quienesSomos" class="nav-link px-2 link-dark">Quienes Somos</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Ayuda</a></li>
-        </ul>
-
-        <section class="col-md-3 text-center text-decoration-none">
-            <a href="html/formulario/formularioRegistro.html" rel="noopener noreferrer">
-                <button type="button" class="btn btn-success me-1">Registrarse</button>
-            </a>
-            <a href="html/formulario/formularioInicioSesion.html" rel="noopener noreferrer">
-                <button type="button" class="btn btn-success">Iniciar Sesión</button>
-            </a>
-        </section>
+            </div>
+        </nav>
     </header>
-    <main>
-        <article id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <section class="carousel-inner">
-                <section class="carousel-item active carrusel_item">
-                    <div class="card border-light">
-                        <div class="card-img bg-transparent">
-                            <img src="img/Habitaciones/Habitacion1.jpg" class="d-block w-100 img_carrusel" alt="...">
-                        </div>
-                        <div class="card-body"></div>
+    <main class="w-100">
+        <section id="modal" class="container-fluid">
+            <div class="modal fade" id="ModalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div id="Alerta">
+
                     </div>
-                    
-                </section>
-                <section class="carousel-item carrusel_item">
-                    <div class="card border-light">
-                        <div class="card-img bg-transparent">
-                            <img width="70%" height="70%" src="img/Habitaciones/Habitacion2.jpg" class="d-block w-100 img_carrusel"  alt="...">
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center">
+                            <img class="modal-title" id="exampleModalLabel"
+                                src="img/logotipo/android-chrome-192x192.png" />
                         </div>
-                        <div class="card-body"></div>
-                    </div>
-                    
-                </section>
-                <section class="carousel-item carrusel_item">
-                    <div class="card border-light">
-                        <div class="card-img bg-transparent">
-                            <img width="70%" height="70%" src="img/Habitaciones/Habitacion3.jpg" class="d-block w-100 img_carrusel" alt="...">
+                        <div class="modal-body">
+                            <form id="formularioRegistro">
+                                <div class="mb-3">
+                                    <label for="Usuario" class="col-form-label">Usuario:</label>
+                                    <input type="text" class="form-control" id="Usuario" placeholder="Usuario/Correo">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="passwordUsuario" class="col-form-label">Contraseña:</label>
+                                    <input type="password" class="form-control" id="passwordUsuario" />
+                                </div>
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="submit" class="btn btn-dark">Entrar</button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="card-body"></div>
                     </div>
-                </section>
+                </div>
+            </div>
+        </section>
+        <section id="Inicio" class="container-fluid mt-5">
+            <div class="container-fluid d-flex justify-content-center">
+                <img class="bg-transparent" src="img/logotipo/android-chrome-512x512.png" alt="Imagen Logotipo">
+            </div>
+            <article class="align-self-center">
+                <h1 class="text-dark text-center">BuscaHabit</h1>
+                <p class="text-dark text-center">Encuentra la Habitacion de tus sueños</p>
+            </article>
+        </section>
+        <section id="ExitosZona" class="container-fluid row ">
+            <div class="col-12">
+                <h1 class="text-center text-light m-3">Exitos de Tu Zona</h1>
+            </div>
+            <div id="carouselExitosZona" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row row-cols-1 row-cols-md-3 col-12">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="img/Habitaciones/Habitacion2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, magni eius,
+                                            tempore tempora minima id corporis temporibus excepturi nihil quidem error
+                                            deleniti incidunt dignissimos, similique quia velit vero cupiditate!
+                                            Dignissimos!
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="img/Habitaciones/Habitacion3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus soluta
+                                            perspiciatis eius maxime quam? Doloribus numquam ut ea non sunt magnam
+                                            suscipit libero amet rem, nesciunt architecto ducimus hic error!
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="img/Habitaciones/Habitacion1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis
+                                            obcaecati hic ex enim temporibus quis sequi voluptate itaque placeat esse,
+                                            ducimus iusto illo, dolores alias? Veritatis quas velit enim?
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-md-3 col-12">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="img/Habitaciones/Habitacion2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis
+                                            obcaecati hic ex enim temporibus quis sequi voluptate itaque placeat esse,
+                                            ducimus iusto illo, dolores alias? Veritatis quas velit enim?
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="img/Habitaciones/Habitacion3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis
+                                            obcaecati hic ex enim temporibus quis sequi voluptate itaque placeat esse,
+                                            ducimus iusto illo, dolores alias? Veritatis quas velit enim?
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="img/Habitaciones/Habitacion1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis
+                                            obcaecati hic ex enim temporibus quis sequi voluptate itaque placeat esse,
+                                            ducimus iusto illo, dolores alias? Veritatis quas velit enim?
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-md-3 col-12">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="img/Habitaciones/Habitacion2.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis
+                                            obcaecati hic ex enim temporibus quis sequi voluptate itaque placeat esse,
+                                            ducimus iusto illo, dolores alias? Veritatis quas velit enim?
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="img/Habitaciones/Habitacion3.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis
+                                            obcaecati hic ex enim temporibus quis sequi voluptate itaque placeat esse,
+                                            ducimus iusto illo, dolores alias? Veritatis quas velit enim?
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100">
+                                    <img src="img/Habitaciones/Habitacion1.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid facilis
+                                            obcaecati hic ex enim temporibus quis sequi voluptate itaque placeat esse,
+                                            ducimus iusto illo, dolores alias? Veritatis quas velit enim?
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExitosZona"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExitosZona"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="Buscador" class="container-fluid mt-5 pt-2">
+            <h1 class="text-center text-light m-3">Buscador</h1>
+            <section class="row m-3" id="mainBuscador">
+                <article id="listaBuscador" class="col-md-4">
+                    <div class="list-group">
+                        <a class="btn btn-secondary list-group-item" data-bs-toggle="collapse"
+                            href="#Habitacion1Example" role="button" aria-expanded="false"
+                            aria-controls="Habitacion1Example">
+                            Calle Alta Nº 23
+                        </a>
+                        <div class="collapse" id="Habitacion1Example">
+
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="img/Habitaciones/Habitacion2.jpg" class="img-fluid rounded-start"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Calle Alta Nº 23</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to additional content. This content is a little bit
+                                                longer.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
+                                        data-bs-target="#habitacionModal">
+                                        Mas Info.
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="modal fade" id="habitacionModal" tabindex="-1"
+                            aria-labelledby="habitacionModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="habitacionModalLabel">Calle Alta Nº23</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="img/Habitaciones/Habitacion2.jpg" class="img-fluid rounded-start"
+                                            alt="...">
+                                        <h5 class="card-title">Calle Alta Nº 23</h5>
+                                        <p class="card-text">
+                                            This is a wider card with supporting text below as a
+                                            natural lead-in to additional content. This content is a little bit
+                                            longer.
+                                        </p>
+                                        <p class="card-text">
+                                            <small class="text-muted">Last updated 3 minsago</small>
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" class="btn btn-primary">Contactar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-secondary list-group-item" data-bs-toggle="collapse"
+                            href="#Habitacion2Example" role="button" aria-expanded="false"
+                            aria-controls="Habitacion2Example">
+                            Calle Alta Nº 24
+                        </a>
+                        <div class="collapse" id="Habitacion2Example">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="img/Habitaciones/Habitacion1.jpg" class="img-fluid rounded-start"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Calle Alta Nº 24</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to additional content. This content is a little bit
+                                                longer.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-secondary list-group-item" data-bs-toggle="collapse"
+                            href="#Habitacion3Example" role="button" aria-expanded="false"
+                            aria-controls="Habitacion3Example">
+                            Calle Alta Nº 25
+                        </a>
+                        <div class="collapse" id="Habitacion3Example">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="img/Habitaciones/Habitacion3.jpg" class="img-fluid rounded-start"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Calle Alta Nº 25</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a
+                                                natural lead-in to additional content. This content is a little bit
+                                                longer.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-secondary list-group-item" data-bs-toggle="collapse"
+                            href="#Habitacion4Example" role="button" aria-expanded="false"
+                            aria-controls="Habitacion4Example">
+                            Calle Alta Nº 26
+                        </a>
+                        <div class="collapse" id="Habitacion4Example">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="img/Habitaciones/Habitacion2.jpg" class="img-fluid rounded-start"
+                                            alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Calle Alta Nº 26</h5>
+                                            <p class="card-text">
+                                                This is a wider card with supporting text below as a
+                                                natural lead-in to additional content. This content is a little bit
+                                                longer.
+                                            </p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins
+                                                    ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article id="mapaBuscador" class="col-md-8">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1581.7157503942879!2d-5.088635305959524!3d37.544896367167205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd12ca923afbce55%3A0xab17b91bb41fcbdf!2sBar%2020PK!5e0!3m2!1ses!2ses!4v1678657518420!5m2!1ses!2ses"
+                        class="w-100 h-100" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
             </section>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </article>
-        <section class="container-fluid" id="quienesSomos">
+        </section>
+        <section id="QuienesSomos">
             <article class="justify-content-center align-content-center ">
                 <h1 class="text-center">Quienes Somos?</h1>
                 <div class="card mb-3 border-light">
                     <div class="row g-0">
-                      <div class="col-md-4">
-                        <img src="img/logotipo/Logo_BuscaHabit.png" class="img-fluid rounded-start" alt="...">
-                      </div>
-                      <div class="col-md-8 align-self-center align-content-center">
-                        <div class="card-body d">
-                          <h3 class="card-text">Somos un grupo de emprededores jovenes con ganas de comernos el mundo.</h3>
-                          <h4 class="card-text">Con la Idea de mostrar habitaciones accesibles en grandes ciudades para Estudiantes.</h4>
+                        <div class="col-md-4">
+                            <img src="img/logotipo/Logo_BuscaHabit.png" class="img-fluid rounded-start" alt="...">
                         </div>
-                      </div>
+                        <div class="col-md-8 align-self-center align-content-center">
+                            <div class="card-body d">
+                                <h3 class="card-text">Somos un grupo de emprededores jovenes con ganas de comernos el
+                                    mundo.</h3>
+                                <h4 class="card-text">Con la Idea de mostrar habitaciones accesibles en grandes ciudades
+                                    para Estudiantes.</h4>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </article>
         </section>
     </main>
-
     <footer>
-        <nav>
-            <ul class="nav justify-content-end piePagina">
-                <li class="nav-item">
-                    <a class="nav-link px-2 link-dark" href="#">Politicas de Privacidad</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-2 link-dark" href="#">Preguntas Frecuentes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link px-2 link-dark" href="#">Coockies</a>
-                </li>
-            </ul>
-        </nav>
+        <section class="">
+
+        </section>
     </footer>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
